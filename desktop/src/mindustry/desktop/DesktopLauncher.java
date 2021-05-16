@@ -37,7 +37,7 @@ public class DesktopLauncher extends ClientLauncher{
                 title = "Mindustry";
                 maximized = true;
                 width = 900;
-                height = 200;
+                height = 700;
                 setWindowIcon(FileType.internal, "icons/icon_64.png");
             }});
         }catch(Throwable e){
