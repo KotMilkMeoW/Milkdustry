@@ -34,7 +34,7 @@ public class Renderer implements ApplicationListener{
     public FrameBuffer effectBuffer = new FrameBuffer();
     public boolean animateShields, drawWeather = true, drawStatus;
     /** minZoom = zooming out, maxZoom = zooming in */
-    public float minZoom = 0.01f, maxZoom = 16f;
+    public float minZoom = 0.01f, maxZoom = 11f;
 
     private @Nullable CoreBuild landCore;
     private Color clearColor = new Color(0f, 0f, 0f, 1f);
