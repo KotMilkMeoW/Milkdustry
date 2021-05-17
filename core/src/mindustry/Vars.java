@@ -75,9 +75,9 @@ public class Vars implements Loadable{
     /** maximum distance between mine and core that supports automatic transferring */
     public static final float mineTransferRange = 440f;
     /** max chat message length */
-    public static final int maxTextLength = 35000;
+    public static final int maxTextLength = 350;
     /** max player name length in bytes */
-    public static final int maxNameLength = 120000;
+    public static final int maxNameLength = 120;
     /** displayed item size when ingame. */
     public static final float itemSize = 5f;
     /** units outside of this bound will die instantly */
