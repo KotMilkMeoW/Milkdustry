@@ -16,3 +16,9 @@
 3. you can move into the distributor
 4. there will be more in the future
 5. The client runs on servers
+
+
+# Links to the game developer's client (not this client)
+1. Github: https://github.com/Anuken/Mindustry
+2. itch.io: https://www.google.com/url?sa=t&source=web&rct=j&url=https://anuke.itch.io/mindustry&ved=2ahUKEwjA5IXFjNDwAhXJBxAIHVp0C2YQFjAXegQIOxAC&usg=AOvVaw09e7ImzhpMbI3NnxU6kksK
+3. discord: https://discord.gg/mindustry
