@@ -25,7 +25,7 @@ import static arc.Core.*;
 import static mindustry.Vars.*;
 
 public abstract class ClientLauncher extends ApplicationCore implements Platform{
-    private static final int loadingFPS = 60;
+    private static final int loadingFPS = 20;
 
     private long lastTime;
     private long beginTime;
