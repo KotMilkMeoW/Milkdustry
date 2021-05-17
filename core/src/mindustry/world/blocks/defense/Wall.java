@@ -40,13 +40,7 @@ public class Wall extends Block{
         drawDisabled = false;
     }
 
-    @Override
-
-        public boolean canControl(){
-
-            return size >= 1;
-
-        }
+    
     @Override
     public void setStats(){
         super.setStats();
