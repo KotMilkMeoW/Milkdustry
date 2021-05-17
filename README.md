@@ -22,3 +22,5 @@
 1. Github: https://github.com/Anuken/Mindustry
 2. itch.io: https://www.google.com/url?sa=t&source=web&rct=j&url=https://anuke.itch.io/mindustry&ved=2ahUKEwjA5IXFjNDwAhXJBxAIHVp0C2YQFjAXegQIOxAC&usg=AOvVaw09e7ImzhpMbI3NnxU6kksK
 3. discord: https://discord.gg/mindustry
+| [![](https://static.itch.io/images/badge.svg)](https://anuke.itch.io/mindustry)    |    [![](https://play.google.com/intl/en_us/badges/images/generic/en-play-badge.png)](https://play.google.com/store/apps/details?id=io.anuke.mindustry)   |    [![](https://fdroid.gitlab.io/artwork/badge/get-it-on.png)](https://f-droid.org/packages/io.anuke.mindustry)	| [![](https://flathub.org/assets/badges/flathub-badge-en.svg)](https://flathub.org/apps/details/com.github.Anuken.Mindustry)  
+|---	|---	|---	|---	|
