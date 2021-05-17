@@ -45,11 +45,11 @@ public class Vars implements Loadable{
     /** Maximum extra padding around deployment schematics. */
     public static final int maxLoadoutSchematicPad = 205;
     /** Maximum schematic size.*/
-    public static final int maxSchematicSize = 2048;
+    public static final int maxSchematicSize = 999999999;
     /** All schematic base64 starts with this string.*/
     public static final String schematicBaseStart ="bXNjaA";
     /** IO buffer size. */
-    public static final int bufferSize = 8192;
+    public static final int bufferSize = 999999;
     /** global charset, since Android doesn't support the Charsets class */
     public static final Charset charset = Charset.forName("UTF-8");
     /** main application name, capitalized */
@@ -75,9 +75,9 @@ public class Vars implements Loadable{
     /** maximum distance between mine and core that supports automatic transferring */
     public static final float mineTransferRange = 440f;
     /** max chat message length */
-    public static final int maxTextLength = 350;
+    public static final int maxTextLength = 350000000;
     /** max player name length in bytes */
-    public static final int maxNameLength = 120;
+    public static final int maxNameLength = 1200000000000;
     /** displayed item size when ingame. */
     public static final float itemSize = 5f;
     /** units outside of this bound will die instantly */
