@@ -289,15 +289,15 @@ public class Renderer implements ApplicationListener{
         return camerascale;
     }
 
-      public float minScale(){
-        return Scl.scl(Mathf.pow(10, 0.0217f * settings.getInt("minzoom")) / 2f);
-    }
     public float minScale(){
-        return Scl.scl(minZoom);
-    }
-
+        return Scl.scl(Mathf.pow(10, 0.0217f * settings.getInt("minzoom")) / 2f);
+    
     public float maxScale(){
         return Mathf.round(Scl.scl(maxZoom));
+    }
+
+    public float getScale(){
+        return targetscale;
     }
 
     public float getScale(){
