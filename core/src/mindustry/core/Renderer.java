@@ -34,7 +34,7 @@ public class Renderer implements ApplicationListener{
     public FrameBuffer effectBuffer = new FrameBuffer();
     public boolean animateShields, drawWeather = true, drawStatus;
     /** minZoom = zooming out, maxZoom = zooming in */
-    public float minZoom = 0.01f, maxZoom = 7f;
+    public float minZoom = 0.01f, maxZoom = 15f;
 
     private @Nullable CoreBuild landCore;
     private Color clearColor = new Color(0f, 0f, 0f, 1f);
@@ -193,6 +193,7 @@ public class Renderer implements ApplicationListener{
             pixelator.register();
         }
 
+       
         Draw.draw(Layer.background, this::drawBackground);
         Draw.draw(Layer.floor, blocks.floor::drawFloor);
         Draw.draw(Layer.block - 1, blocks::drawShadows);
@@ -288,6 +289,9 @@ public class Renderer implements ApplicationListener{
         return camerascale;
     }
 
+      public float minScale(){
+        return Scl.scl(Mathf.pow(10, 0.0217f * settings.getInt("minzoom")) / 2f);
+    }
     public float minScale(){
         return Scl.scl(minZoom);
     }
