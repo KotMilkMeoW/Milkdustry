@@ -41,6 +41,13 @@ public class Wall extends Block{
     }
 
     @Override
+
+        public boolean canControl(){
+
+            return size >= 1;
+
+        }
+    @Override
     public void setStats(){
         super.setStats();
 
