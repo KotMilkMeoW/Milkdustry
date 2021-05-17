@@ -289,7 +289,7 @@ public class Renderer implements ApplicationListener{
     }
 
     public float minScale(){
-        return Scl.scl(Mathf.pow(10, 0.0217f * settings.getInt("minzoom")) / 2f);
+        return Scl.scl(Mathf.pow(10, 0.0217f * settings.getInt("minzoom")) / 1.5f);
     }
 
     public float maxScale(){
