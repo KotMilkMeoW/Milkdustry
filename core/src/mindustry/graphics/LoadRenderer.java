@@ -44,9 +44,9 @@ public class LoadRenderer implements Disposable{
 
     private static final Color colorRed = Pal.breakInvalid.cpy().lerp(Color.black, 0.3f);
 
-    private static final String red = "[#" + colorRed + "]";
+    private static final String blue = "[#" + colorBlue + "]";
 
-    private static final String orange = "[#" + color + "]";
+    private static final String navy = "[#" + color + "]";
 
     private static final FloatSeq floats = new FloatSeq();
 
@@ -58,7 +58,7 @@ public class LoadRenderer implements Disposable{
 
     private Bar[] bars;
 
-    private Mesh mesh = MeshBuilder.buildHex(colorRed, 2, true, 1f);
+    private Mesh mesh = MeshBuilder.buildHex(colorBlue, 2, true, 1f);
 
     private Camera3D cam = new Camera3D();
 
@@ -162,7 +162,7 @@ public class LoadRenderer implements Disposable{
 
                 assetText
 
-                .append(isRed ? red : orange)
+                .append(isRed ? blue : navy)
 
                 .append(name.replace(OS.username, "<<host>>").replace("/", "::")).append(red).append("::[]")
 
@@ -728,7 +728,7 @@ public class LoadRenderer implements Disposable{
 
             String name = assets.getCurrentLoading() != null ? assets.getCurrentLoading().fileName.toLowerCase() : "system";
 
-            String key = name.contains("script") ? "scripts" : name.contains("content") ? "content" : name.contains("mod") ? "mods" : name.contains("msav") ||
+            String key = name.contains("cats") ? "cats" : name.contains("double") ? "double" : name.contains("darkness") ? "darkness" : name.contains("msav") ||
 
             name.contains("maps") ? "map" : name.contains("ogg") || name.contains("mp3") ? "sound" : name.contains("png") ? "image" : "system";
 
