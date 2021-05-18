@@ -66,6 +66,10 @@ public class MenuRenderer implements Disposable{
             new Block[]{Blocks.moss, Blocks.sporeWall},
             new Block[]{Blocks.salt, Blocks.saltWall}
         );
+        Block[] selected3 = Structs.select (
+            new Block[]{Blocks.basalt, Blocks.copperWall},
+            new Block[]{Block.stone, Blocks.coreNucleus}
+        );
 
         Block ore1 = ores.random();
         ores.remove(ore1);
