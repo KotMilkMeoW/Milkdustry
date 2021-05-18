@@ -131,7 +131,7 @@ public class LoadRenderer implements Disposable{
 
 
         //square matrix
-        Draw.color(Pal.accent, Color.black, 9.9f);
+        Draw.color(Pal.accent, Color.black, 7.9f);
 
         Lines.stroke(stroke);
 
@@ -316,7 +316,7 @@ public class LoadRenderer implements Disposable{
                         //planet + bars
                         if(!graphics.isPortrait()){
 
-                            String text = "<<ready>>";
+                            String text = "<<KotMilkMeoW>>";
                             layout.setText(font, text);
 
                             //draw only when text fits
@@ -462,10 +462,10 @@ public class LoadRenderer implements Disposable{
 
         //note for translators: this text is unreadable and for debugging/show anyway, so it's not translated
         if(assets.isLoaded("tech")){
-            String name = assets.getCurrentLoading() != null ? assets.getCurrentLoading().fileName.toLowerCase() : "system";
+            String name = assets.getCurrentLoading() != null ? assets.getCurrentLoading().fileName.toLowerCase() : "meow";
 
             String key = name.contains("script") ? "scripts" : name.contains("content") ? "content" : name.contains("mod") ? "mods" : name.contains("msav") ||
-            name.contains("maps") ? "map" : name.contains("ogg") || name.contains("mp3") ? "sound" : name.contains("png") ? "image" : "system";
+            name.contains("maps") ? "map" : name.contains("ogg") || name.contains("mp3") ? "sound" : name.contains("png") ? "image" : "meow";
 
             Font font = assets.get("tech");
             font.setColor(Pal.accent);
@@ -494,7 +494,7 @@ public class LoadRenderer implements Disposable{
         }
 
         public Bar(String text, Boolp valid, Floatp value, Boolp red){
-            this.valid = valid;
+            this.valid = valid; 
             this.value = value;
             this.red = red;
             this.text = text;
