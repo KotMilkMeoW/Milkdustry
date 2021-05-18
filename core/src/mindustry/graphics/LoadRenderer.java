@@ -42,7 +42,7 @@ public class LoadRenderer implements Disposable{
 
     private static final Color color = new Color(Pal.accent).lerp(Color.black, 0.5f);
 
-    private static final Color colorRed = Pal.breakInvalid.cpy().lerp(Color.black, 0.3f);
+    private static final Color colorBlue = Pal.breakInvalid.cpy().lerp(Color.black, 0.3f);
 
     private static final String blue = "[#" + colorBlue + "]";
 
@@ -164,7 +164,7 @@ public class LoadRenderer implements Disposable{
 
                 .append(isRed ? blue : navy)
 
-                .append(name.replace(OS.username, "<<host>>").replace("/", "::")).append(red).append("::[]")
+                .append(name.replace(OS.username, "<<host>>").replace("/", "::")).append(blue).append("::[]")
 
                 .append(assets.getAssetType(name).getSimpleName()).append("\n");
 
@@ -454,7 +454,7 @@ public class LoadRenderer implements Disposable{
 
                             float scale = Mathf.clamp(!renderTimes.hasEnoughData() ? Mathf.randomSeed(i) : (val / renderTimes.mean() - 0.5f));
 
-                            Color dst = scale > 0.8f ? colorRed : color;
+                            Color dst = scale > 0.8f ? colorBlue : color;
 
                             Draw.color(dst);
 
