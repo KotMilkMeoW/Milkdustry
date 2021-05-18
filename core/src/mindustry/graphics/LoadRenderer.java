@@ -40,9 +40,9 @@ import static arc.Core.*;
 
 public class LoadRenderer implements Disposable{
 
-    private static final Color color = new Color(Pal.accent).lerp(Color.black, 0.5f);
+    private static final Color color = new Color(Pal.accent).lerp(Color.black, 1.5f);
 
-    private static final Color colorBlue = Pal.breakInvalid.cpy().lerp(Color.black, 0.3f);
+    private static final Color colorBlue = Pal.breakInvalid.cpy().lerp(Color.black, 1.3f);
 
     private static final String blue = "[#" + colorBlue + "]";
 
@@ -58,7 +58,7 @@ public class LoadRenderer implements Disposable{
 
     private Bar[] bars;
 
-    private Mesh mesh = MeshBuilder.buildHex(colorBlue, 2, true, 1f);
+    private Mesh mesh = MeshBuilder.buildHex(colorBlue, 3, true, 2f);
 
     private Camera3D cam = new Camera3D();
 
@@ -76,11 +76,11 @@ public class LoadRenderer implements Disposable{
 
         try{
 
-            fx = new FxProcessor(Format.rgba8888, 2, 2, false, true);
+            fx = new FxProcessor(Format.rgba8888, 4, 4, false, true);
 
         }catch(Exception e){
 
-            fx = new FxProcessor(Format.rgb565, 2, 2, false, true);
+            fx = new FxProcessor(Format.rgb565, 4, 4, false, true);
 
         }
 
@@ -182,7 +182,7 @@ public class LoadRenderer implements Disposable{
 
         Draw.proj().setOrtho(0, 0, Core.graphics.getWidth(), Core.graphics.getHeight());
 
-        int lightVerts = 20;
+        int lightVerts = 2;
 
         float lightRad = Math.max(w, h)*0.6f;
 
@@ -190,7 +190,7 @@ public class LoadRenderer implements Disposable{
 
         //light
 
-        Fill.light(w/2, h/2, lightVerts, lightRad, Tmp.c1.set(color).a(0.15f), Color.clear);
+        Fill.light(w/2, h/2, lightVerts, lightRad, Tmp.c1.set(color).a(1.15f), Color.clear);
 
         float space = s*(60);
 
@@ -726,11 +726,11 @@ public class LoadRenderer implements Disposable{
 
         if(assets.isLoaded("tech")){
 
-            String name = assets.getCurrentLoading() != null ? assets.getCurrentLoading().fileName.toLowerCase() : "system";
+            String name = assets.getCurrentLoading() != null ? assets.getCurrentLoading().fileName.toLowerCase() : "meow";
 
             String key = name.contains("cats") ? "cats" : name.contains("double") ? "double" : name.contains("darkness") ? "darkness" : name.contains("msav") ||
 
-            name.contains("maps") ? "map" : name.contains("ogg") || name.contains("mp3") ? "sound" : name.contains("png") ? "image" : "system";
+            name.contains("maps") ? "map" : name.contains("ogg") || name.contains("mp3") ? "sound" : name.contains("png") ? "image" : "meow";
 
             Font font = assets.get("tech");
 
