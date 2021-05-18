@@ -738,7 +738,7 @@ public class LoadRenderer implements Disposable{
 
             Draw.color(Color.black);
 
-            font.draw(red + "[[[[ " + key + " ]]\n" + navy + "<" + Version.modifier + "  " + (Version.build == 0 ? "[init]" : Version.buildString()) + ">", w/2f, h/2f + 110*s, Align.center);
+            font.draw(blue + "[[[[ " + key + " ]]\n" + navy + "<" + Version.modifier + "  " + (Version.build == 0 ? "[init]" : Version.buildString()) + ">", w/2f, h/2f + 110*s, Align.center);
 
         }
 
@@ -756,7 +756,7 @@ public class LoadRenderer implements Disposable{
 
         final Floatp value;
 
-        final Boolp red, valid;
+        final Boolp blue, valid;
 
         final String text;
 
@@ -764,7 +764,7 @@ public class LoadRenderer implements Disposable{
 
             this.value = () -> value;
 
-            this.red = () -> red;
+            this.blue = () -> blue;
 
             this.valid = () -> true;
 
@@ -778,7 +778,7 @@ public class LoadRenderer implements Disposable{
 
             this.value = value;
 
-            this.red = red;
+            this.blue = blue;
 
             this.text = text;
 
