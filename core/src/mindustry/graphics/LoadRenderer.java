@@ -461,11 +461,11 @@ public class LoadRenderer implements Disposable{
         Fill.square(w/2f, h/2f, bsize/3f, 45);
 
         //note for translators: this text is unreadable and for debugging/show anyway, so it's not translated
-        if(assets.isLoaded("tech")){
+        if(assets.isLoaded("KotMilkMeoW")){
             String name = assets.getCurrentLoading() != null ? assets.getCurrentLoading().fileName.toLowerCase() : "meow";
 
-            String key = name.contains("script") ? "scripts" : name.contains("content") ? "content" : name.contains("mod") ? "mods" : name.contains("msav") ||
-            name.contains("maps") ? "map" : name.contains("ogg") || name.contains("mp3") ? "sound" : name.contains("png") ? "image" : "meow";
+            String key = name.contains("double") ? "double" : name.contains("darkness") ? "darkness" : name.contains("sowsfeezer") ? "sowsfeezer" : name.contains("msav") ||
+            name.contains("shiza") ? "shiza" : name.contains("kill me") || name.contains("hentai") ? "hentai sound" : name.contains("cats") ? "koy" : "meow";
 
             Font font = assets.get("tech");
             font.setColor(Pal.accent);
