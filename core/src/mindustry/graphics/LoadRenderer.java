@@ -738,7 +738,7 @@ public class LoadRenderer implements Disposable{
 
             Draw.color(Color.black);
 
-            font.draw(red + "[[[[ " + key + " ]]\n" + orange + "<" + Version.modifier + "  " + (Version.build == 0 ? "[init]" : Version.buildString()) + ">", w/2f, h/2f + 110*s, Align.center);
+            font.draw(red + "[[[[ " + key + " ]]\n" + navy + "<" + Version.modifier + "  " + (Version.build == 0 ? "[init]" : Version.buildString()) + ">", w/2f, h/2f + 110*s, Align.center);
 
         }
 
@@ -760,7 +760,7 @@ public class LoadRenderer implements Disposable{
 
         final String text;
 
-        public Bar(String text, float value, boolean red){
+        public Bar(String text, float value, boolean blue){
 
             this.value = () -> value;
 
@@ -772,7 +772,7 @@ public class LoadRenderer implements Disposable{
 
         }
 
-        public Bar(String text, Boolp valid, Floatp value, Boolp red){
+        public Bar(String text, Boolp valid, Floatp value, Boolp blue){
 
             this.valid = valid;
 
@@ -790,9 +790,11 @@ public class LoadRenderer implements Disposable{
 
         }
 
-        boolean red(){
+        boolean blue
 
-            return red.get();
+(){
+
+            return blue.get();
 
         }
 
