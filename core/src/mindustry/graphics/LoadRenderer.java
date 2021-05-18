@@ -386,7 +386,7 @@ public class LoadRenderer implements Disposable{
 
                             if(bar.valid()){
 
-                                Draw.color(bar.red() ? colorRed : color);
+                                Draw.color(bar.blue() ? colorBlue : color);
 
                                 float y = maxy - i * barspace - barpad - barheight;
 
@@ -622,7 +622,7 @@ public class LoadRenderer implements Disposable{
 
                                 float trix = vx - trispace/2f - trispace*tx - tpad, triy = vy + vh - trispace/2f - trispace*ty -tpad;
 
-                                Draw.color(Mathf.randomSeed(Pack.longInt(tx + 91, ty + 55)) < 0.5 * (preview ? 1f : 1f - progress) ? colorRed : color);
+                                Draw.color(Mathf.randomSeed(Pack.longInt(tx + 91, ty + 55)) < 0.5 * (preview ? 1f : 1f - progress) ? colorBlue : color);
 
                                 Fill.square(trix, triy, trispace/2.5f, 0);
 
