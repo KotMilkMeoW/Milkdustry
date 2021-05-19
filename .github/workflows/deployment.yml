@@ -25,11 +25,11 @@ jobs:
     - name: выгрузка JAR
       uses: actions/upload-artifact@v2
       with:
-        name: Desktop JAR (zipped)
+        name: PC version
         path: desktop/build/libs/Mindustry.jar
     - name: выгрузка APK
       uses: actions/upload-artifact@v2
       with:
-        name: Android APK (zipped)
+        name: Android version
         path: android/build/outputs/apk/*
   
