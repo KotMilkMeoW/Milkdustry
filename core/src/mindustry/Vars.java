@@ -77,7 +77,7 @@ public class Vars implements Loadable{
     /** max chat message length */
     public static final int maxTextLength = 350;
     /** max player name length in bytes */
-    public static final int maxNameLength = 120;
+    public static final int maxNameLength = 480;
     /** displayed item size when ingame. */
     public static final float itemSize = 5f;
     /** units outside of this bound will die instantly */
