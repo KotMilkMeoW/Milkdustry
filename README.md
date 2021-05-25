@@ -1,5 +1,5 @@
 ![Logo](core/assets-raw/sprites/ui/logo.png)
-[![Discord](https://img.shields.io/discord/843155223752867880.svg?logo=discord&logoColor=white&logoWidth=20&labelColor=7289DA&label=Discord&color=17cf48)](https://discord.gg/CuRpCyyXGE)
+[![Discord](https://img.shields.io/discord/843155223752867880?logo=discord&logoColor=white&logoWidth=20&labelColor=7289DA&label=Discord&color=17cf48)](https://discord.gg/CuRpCyyXGE)
 # Client for Mindustry
 Просто клиент со сломаным кодом но рабочий. Просто веселюсь
 # Installing
