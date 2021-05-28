@@ -265,11 +265,11 @@ project(":ios"){
         if(vfile.exists()){
             props.load(new FileInputStream(vfile))
         }else{
-            props['app.id'] = 'io.anuke.mindustry'
+            props['app.id'] = 'io.anuke.milkdustry'
             props['app.version'] = '6.0'
             props['app.mainclass'] = 'mindustry.IOSLauncher'
             props['app.executable'] = 'IOSLauncher'
-            props['app.name'] = 'Mindustry'
+            props['app.name'] = 'Milkdustry'
         }
         
         props['app.build'] = (!props.containsKey("app.build") ? 40 : props['app.build'].toInteger() + 1) + ""
