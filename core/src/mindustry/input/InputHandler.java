@@ -45,7 +45,7 @@ public abstract class InputHandler implements InputProcessor, GestureListener{
     final static float playerSelectRange = mobile ? 17f : 11f;
     final static IntSeq removed = new IntSeq();
     /** Maximum line length. */
-    final static int maxLength = 100;
+    final static int maxLength = 700;
     final static Rect r1 = new Rect(), r2 = new Rect();
 
     public final OverlayFragment frag = new OverlayFragment();
