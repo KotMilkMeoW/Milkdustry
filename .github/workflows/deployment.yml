@@ -40,11 +40,11 @@ jobs:
 
     - name: пакинг минды в JAR
 
-      run: ./gradlew desktop:dist -Pbuildversion=126.2 -PverionType=release --stacktrace
+      run: ./gradlew desktop:dist -Pbuildversion=128.1 -PverionType=release --stacktrace
 
     - name: пакинг минды в андроид
 
-      run: ./gradlew android:assembleDebug -Pbuildversion=127.1 -PverionType=release --stacktrace  
+      run: ./gradlew android:assembleDebug -Pbuildversion=128.1 -PverionType=release --stacktrace  
 
     - name: выгрузка JAR
 
